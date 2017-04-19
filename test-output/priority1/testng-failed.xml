@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [priority1]">
+  <test name="sample(failed)">
+    <classes>
+      <class name="com.mvn.testng.NewTestNg1">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.NewTestNg1 -->
+      <class name="com.mvn.testng.AppTest">
+        <methods>
+          <include name="testApp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.AppTest -->
+      <class name="com.mvn.testng.NewTestNg2">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.NewTestNg2 -->
+    </classes>
+  </test> <!-- sample(failed) -->
+  <test name="sample2(failed)">
+    <classes>
+      <class name="com.mvn.testng.NewTestNg1">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.NewTestNg1 -->
+      <class name="com.mvn.testng.NewTestNg2">
+        <methods>
+          <include name="f"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.NewTestNg2 -->
+      <class name="com.mvn.testng.AppTest">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.mvn.testng.AppTest -->
+    </classes>
+  </test> <!-- sample2(failed) -->
+</suite> <!-- Failed suite [priority1] -->

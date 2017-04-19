@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite  name="priority1">
+	<test name="sample">
+		<classes>
+			<class name = "com.mvn.testng.AppTest"></class>
+			<methods>
+				<include name="testApp"/>
+			</methods>
+		</classes>
+	</test>
+	
+	<test name="sample1">
+		<classes>
+			<class name = "com.mvn.testng.NewTestNg1"></class>
+			<methods>
+				<include name="f1"/>
+				<include name="f"/>	
+			</methods>
+		</classes>
+	</test>
+	
+	<test name="sample2">
+		<classes>
+			<class name = "com.mvn.testng.NewTestNg2"></class>
+			<methods>
+				<include name="f1"/>
+				<include name="f"/>	
+			</methods>
+		</classes>
+	</test>
+	
+	
+</suite>
